@@ -1,4 +1,4 @@
-name: Runner ${{ github.run_number }}
+name: Runner
 
 on:
   schedule:

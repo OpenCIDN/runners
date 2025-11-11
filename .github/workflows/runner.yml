@@ -9,7 +9,7 @@ on:
 jobs:
   runner:
     runs-on: ubuntu-latest
-    container: ghcr.io/opencidn/cidn/runner:v0.0.37
+    container: ghcr.io/opencidn/cidn/runner:v0.0.38
     steps:
       - shell: sh
         run: runner ${{ secrets.ARGS }}

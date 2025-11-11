@@ -1,5 +1,5 @@
 name: Runner
-run-name: Runner ${{ github.run_id }}
+run-name: Runner ${{ github.run_number }}
 
 on:
   schedule:
@@ -13,4 +13,4 @@ jobs:
     container: ghcr.io/opencidn/cidn/runner:v0.0.42
     steps:
       - shell: sh
-        run: runner --handler-name=${{ github.run_id }} --update-duration=10s ${{ secrets.ARGS }}
+        run: runner --handler-name=${{ github.run_number }} --update-duration=10s ${{ secrets.ARGS }}

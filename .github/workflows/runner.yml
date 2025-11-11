@@ -9,7 +9,7 @@ on:
 jobs:
   runner:
     runs-on: ubuntu-latest
-    container: ghcr.io/opencidn/cidn/runner:v0.0.38
+    container: ghcr.io/opencidn/cidn/runner:v0.0.41
     steps:
       - shell: sh
-        run: runner ${{ secrets.ARGS }}
+        run: runner --update-interval=10s ${{ secrets.ARGS }}

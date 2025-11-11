@@ -1,5 +1,5 @@
 name: Runner
-run-name: Runner-${{ github.run_number }}
+run-name: Runner ${{ github.run_id }}
 
 on:
   schedule:

@@ -13,4 +13,4 @@ jobs:
     container: ghcr.io/opencidn/cidn/runner:v0.0.59
     steps:
       - shell: sh
-        run: runner --handler-name=${{ github.run_number }} --update-duration=10s ${{ secrets.ARGS }}
+        run: runner --handler-name=${{ github.run_number }} --update-duration=10s ${{ secrets.ARGS_CIDN }}

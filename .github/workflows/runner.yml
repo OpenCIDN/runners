@@ -10,7 +10,7 @@ on:
 jobs:
   runner:
     runs-on: ubuntu-latest
-    container: ghcr.io/opencidn/cidn/runner:v0.0.96
+    container: ghcr.io/opencidn/cidn/runner:v0.0.97
     steps:
       - shell: sh
         run: runner --handler-name=cidn-${{ github.run_number }} --update-duration=10s --duration=4h --concurrency=2 ${{ secrets.ARGS_CIDN }}

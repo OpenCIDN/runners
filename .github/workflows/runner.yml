@@ -3,7 +3,7 @@ run-name: Runner ${{ github.run_number }}
 
 on:
   schedule:
-    - cron: "*/40 * * * *"
+    - cron: "15,45 * * * *"
 
   workflow_dispatch:
 
